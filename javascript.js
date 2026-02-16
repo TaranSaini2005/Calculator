@@ -1,3 +1,4 @@
+
 function Add(numberLeft, numberRight)
 {
     console.log(numberLeft + numberRight);
@@ -39,7 +40,4 @@ function Operate(numberLeft, numberRight, operator)
     {
         Divide(numberLeft, numberRight);
     }
-
 }
-
-Operate(2,3,"+");

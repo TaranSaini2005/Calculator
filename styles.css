@@ -3,6 +3,77 @@
 body 
 {
     font-family: "Roboto", sans-serif;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(100, 100, 100);
     color: white;
+
+}
+
+.main
+{
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.container
+{ 
+    width: 400px;
+    border-radius: 20px;
+    background-color: rgb(30, 30, 30);
+}
+
+.screen
+{
+    height: 120px;
+    border-radius: 5px;
+    background-color: rgb(80, 80, 80);
+    margin-top: 20px;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 10px;
+}
+
+.grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px; 
+}
+
+.btn
+{
+    height: 80px;
+    width: 80px;
+}
+
+.btn-clear, .btn-delete
+{
+    height: 80px;
+    width: 170px;
+}
+
+button 
+{
+    /* padding: 10px 20px;
+    width: 200px; */
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /* cursor: pointer; */
+    outline: none;
+}
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+  background-color: rgb(60, 60, 60);
 }
