@@ -1,32 +1,45 @@
-let value = 0;
-
-
-function Add(number)
+function Add(numberLeft, numberRight)
 {
-    value += number; 
-    console.log(value);
+    console.log(numberLeft + numberRight);
 }
 
-function Multiply(number)
+function Multiply(numberLeft, numberRight)
 {
-    value *= number;
-    console.log(value);
+    console.log(numberLeft * numberRight);
 }
 
-function Subtract(number)
+function Subtract(numberLeft, numberRight)
 {
-    value -= number;
-    console.log(value);
+    console.log(numberLeft - numberRight);
 }
 
-function Divide(number)
+function Divide(numberLeft, numberRight)
 {
-    value /= number;
-    console.log(value);
+    console.log(numberLeft / numberRight);
 }
 
+function Operate(numberLeft, numberRight, operator)
+{
+    if (operator == "+")
+    {
+        Add(numberLeft, numberRight);
+    }
 
-Add(2);
-Multiply(6);
-Subtract(2);
-Divide(2);
+    if (operator == "-")
+    {
+        Subtract(numberLeft, numberRight);
+    }
+
+    if (operator == "*")
+    {
+        Multiply(numberLeft, numberRight);
+    }
+
+    if (operator == "/")
+    {
+        Divide(numberLeft, numberRight);
+    }
+
+}
+
+Operate(2,3,"+");
